@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.srabblenaut.controller.InicioViewController">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="525.0" prefWidth="850.0" styleClass="jfx-Fondo" stylesheets="@../resources/Styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.srabblenaut.controller.InicioViewController">
    <children>
-      <JFXButton fx:id="btnPlay" layoutX="267.0" layoutY="168.0" onAction="#OnActionbtnplay" text="Play" />
+      <ImageView fitHeight="542.0" fitWidth="896.0" layoutX="60.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@../resources/Fondo1.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="238.0" layoutY="90.0" prefHeight="349.0" prefWidth="490.0">
+         <children>
+            <Label fx:id="lblScrabblenut" prefHeight="45.0" prefWidth="196.0" styleClass="lblScrabblenaut" text="Scrabblenaut" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/alphabetic.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton fx:id="btnIngresar" onAction="#OnAtionBtnIngresar" prefHeight="40.0" prefWidth="140.0" styleClass="btnIngresar" stylesheets="@../resources/Styles.css" text="Ingresar" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnRegistrarse" maxHeight="44.0" onAction="#OnAtionBtnregistrarse" prefHeight="40.0" prefWidth="140.0" styleClass="btnRegistrarse" text="Registrarse" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnAcercaDe" onAction="#OnAtionBtnAcercaDe" prefHeight="40.0" prefWidth="140.0" styleClass="btnAcercaDe" stylesheets="@../resources/Styles.css" text="AcercaDe" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnSalir" onAction="#OnActionBtnSalir" prefHeight="40.0" prefWidth="140.0" styleClass="btnSalir" text="Salir" VBox.vgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </VBox>
    </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
 </AnchorPane>

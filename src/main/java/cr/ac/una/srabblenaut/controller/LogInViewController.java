@@ -5,6 +5,8 @@
 package cr.ac.una.srabblenaut.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -18,20 +20,22 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author maris
  */
-public class InicioViewController implements Initializable {
+public class LogInViewController implements Initializable {
 
     @FXML
     private AnchorPane root;
     @FXML
-    private Label lblScrabblenut;
+    private Label lblIngresarUsuario;
     @FXML
-    private JFXButton btnIngresar;
+    private JFXTextField txtUsuario;
+    @FXML
+    private JFXPasswordField txtClave;
+    @FXML
+    private JFXButton btnAceptar;
+    @FXML
+    private JFXButton btnCancelar;
     @FXML
     private JFXButton btnRegistrarse;
-    @FXML
-    private JFXButton btnAcercaDe;
-    @FXML
-    private JFXButton btnSalir;
 
     /**
      * Initializes the controller class.
@@ -42,19 +46,15 @@ public class InicioViewController implements Initializable {
     }    
 
     @FXML
-    private void OnAtionBtnIngresar(ActionEvent event) {
+    private void OnAtionBtnAceptar(ActionEvent event) {
     }
 
     @FXML
-    private void OnAtionBtnregistrarse(ActionEvent event) {
+    private void OnActionBtnCancelar(ActionEvent event) {
     }
 
     @FXML
-    private void OnAtionBtnAcercaDe(ActionEvent event) {
-    }
-
-    @FXML
-    private void OnActionBtnSalir(ActionEvent event) {
+    private void OnActionBtnRegistrarse(ActionEvent event) {
     }
     
 }
