@@ -4,9 +4,14 @@
  */
 package cr.ac.una.srabblenaut.controller;
 
+import com.jfoenix.controls.JFXButton;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
@@ -14,6 +19,20 @@ import javafx.fxml.Initializable;
  * @author maris
  */
 public class PrincipalViewController extends Controller implements Initializable {
+<<<<<<< HEAD
+=======
+
+    @FXML
+    private AnchorPane root;
+    @FXML
+    private Label lblScrabblenut2;
+    @FXML
+    private JFXButton btnJugar;
+    @FXML
+    private JFXButton btnCargarPartida;
+    @FXML
+    private JFXButton btnSalir;
+>>>>>>> fde96c66ac746a7f54144b2e738c4c17860dc77c
 
     /**
      * Initializes the controller class.
@@ -23,9 +42,27 @@ public class PrincipalViewController extends Controller implements Initializable
         // TODO
     }    
 
+<<<<<<< HEAD
     @Override
     public void initialize() {
         
+=======
+    @FXML
+    private void OnAtionBtnJugar(ActionEvent event) {
+    }
+
+    @FXML
+    private void OnAtionBtnCargarPartida(ActionEvent event) {
+    }
+
+    @FXML
+    private void OnActionBtnSalir(ActionEvent event) {
+    }
+
+    @Override
+    public void initialize() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+>>>>>>> fde96c66ac746a7f54144b2e738c4c17860dc77c
     }
     
 }

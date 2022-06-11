@@ -74,5 +74,14 @@
             </HBox>
          </children>
       </VBox>
+      <JFXButton fx:id="btnVolver" accessibleRole="IMAGE_VIEW" layoutX="746.0" layoutY="48.0" onAction="#OnActonBtnVolver" text=" ">
+         <graphic>
+            <ImageView fx:id="btnVolver" fitHeight="76.0" fitWidth="53.0" onDragDetected="#OnActionBtnVolver" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>

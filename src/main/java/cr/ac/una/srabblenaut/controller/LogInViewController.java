@@ -13,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -36,6 +37,8 @@ public class LogInViewController extends Controller implements Initializable {
     private JFXButton btnCancelar;
     @FXML
     private JFXButton btnRegistrarse;
+    @FXML
+    private JFXButton btnVolver;
 
     /**
      * Initializes the controller class.
@@ -59,6 +62,18 @@ public class LogInViewController extends Controller implements Initializable {
 
     @Override
     public void initialize() {
+<<<<<<< HEAD
+=======
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @FXML
+    private void OnActionBtnVolver(MouseEvent event) {
+    }
+
+    @FXML
+    private void OnActonBtnVolver(ActionEvent event) {
+>>>>>>> fde96c66ac746a7f54144b2e738c4c17860dc77c
     }
     
 }
