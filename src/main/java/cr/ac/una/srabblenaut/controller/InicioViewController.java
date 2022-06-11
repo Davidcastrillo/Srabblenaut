@@ -18,7 +18,7 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author maris
  */
-public class InicioViewController implements Initializable {
+public class InicioViewController extends Controller implements Initializable {
 
     @FXML
     private AnchorPane root;
@@ -55,6 +55,11 @@ public class InicioViewController implements Initializable {
 
     @FXML
     private void OnActionBtnSalir(ActionEvent event) {
+    }
+
+    @Override
+    public void initialize() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

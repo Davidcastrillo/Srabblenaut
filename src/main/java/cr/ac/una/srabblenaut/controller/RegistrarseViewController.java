@@ -13,13 +13,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
  *
  * @author maris
  */
-public class RegistrarseViewController implements Initializable {
+public class RegistrarseViewController extends Controller implements Initializable {
 
     @FXML
     private Label lblRegistrarUsuario;
@@ -60,6 +61,15 @@ public class RegistrarseViewController implements Initializable {
 
     @FXML
     private void OnActonBtnVolver(ActionEvent event) {
+    }
+
+    @Override
+    public void initialize() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @FXML
+    private void OnActionBtnVolver(MouseEvent event) {
     }
     
 }

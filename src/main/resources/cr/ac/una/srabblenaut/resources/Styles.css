@@ -143,3 +143,58 @@
     -fx-font-size: 15px;
     -fx-font-weight: bold;
 }
+.jfx-Fondo4{
+    -fx-background-color:linear-gradient( #006600, #bb99ff);
+}
+.lblScrabblenaut2{
+    -fx-background-color:linear-gradient( #006600, #bb99ff);
+    -fx-opacity: 0.8;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+}
+.btnJugar{
+    -fx-background-color: linear-gradient(#ccccff,#008000);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment:CENTER;
+}
+.btnCargarPartida{
+    -fx-background-color: linear-gradient(#008000, #6666ff);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment:CENTER;
+}
+.lblScrabblenaut3{
+    -fx-background-color:linear-gradient( #006600, #ff4d4d);
+    -fx-opacity: 0.8;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+}
+.jfx-Fondo5{
+    -fx-background-color:linear-gradient( #006600, #ff4d4d);
+}
+.lblGeneral{
+  
+    -fx-opacity: 0.8;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+}
