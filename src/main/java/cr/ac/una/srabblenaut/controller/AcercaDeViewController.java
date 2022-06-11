@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author maris
  */
-public class AcercaDeViewController implements Initializable {
+public class AcercaDeViewController extends Controller implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -22,5 +22,9 @@ public class AcercaDeViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @Override
+    public void initialize() {
+    }
     
 }

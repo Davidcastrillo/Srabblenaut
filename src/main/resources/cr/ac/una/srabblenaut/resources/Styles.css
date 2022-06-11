@@ -2,10 +2,18 @@
  * Empty Stylesheet file.
  */
 
-.mainFxmlClass {
 
+.fondoPrincipal{
+    -fx-background-image:url("../resources/Fondo1.jpg");
+    -fx-background-size:stretch;
 }
 
+
+
+.fondoTablero{
+    -fx-background-image:url("../resources/mesaImagen.jpg");
+    -fx-background-size:stretch;
+}
 .btnIngresar{
     -fx-background-color: linear-gradient(#0099FF, #004d00);
     -fx-background-radius: 5;

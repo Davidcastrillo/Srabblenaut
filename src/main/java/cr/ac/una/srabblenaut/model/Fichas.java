@@ -4,6 +4,7 @@
  */
 package cr.ac.una.srabblenaut.model;
 
+import java.io.Serializable;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -11,7 +12,7 @@ import javafx.scene.image.ImageView;
  *
  * @author David
  */
-public class Fichas extends ImageView {
+public class Fichas extends ImageView implements Serializable {
     private int puntaje;
     private int tipoFicha;
     private String tipodeFicha;

@@ -20,7 +20,7 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author maris
  */
-public class LogInViewController implements Initializable {
+public class LogInViewController extends Controller implements Initializable {
 
     @FXML
     private AnchorPane root;
@@ -55,6 +55,10 @@ public class LogInViewController implements Initializable {
 
     @FXML
     private void OnActionBtnRegistrarse(ActionEvent event) {
+    }
+
+    @Override
+    public void initialize() {
     }
     
 }

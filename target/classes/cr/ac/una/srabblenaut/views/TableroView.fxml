@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.srabblenaut.controller.TableroViewController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.srabblenaut.controller.TableroViewController">
    <children>
-      <Label layoutX="281.0" layoutY="183.0" text="buenas" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox fx:id="vboxTablero" alignment="CENTER" fillWidth="false" prefHeight="591.0" prefWidth="510.0" spacing="5.0" styleClass="fondoTablero" stylesheets="@../resources/Styles.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="600.0" prefWidth="238.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="400.0" text="Fichas" VBox.vgrow="SOMETIMES" />
+                  <HBox fx:id="hBoxbolsaFichas" prefHeight="139.0" prefWidth="302.0" />
+                  <VBox fx:id="vBxJugador1" prefHeight="155.0" prefWidth="302.0">
+                     <children>
+                        <Label fx:id="lblJugador1" alignment="CENTER" prefHeight="29.0" prefWidth="328.0" text="Jugador1" />
+                        <HBox fx:id="hBoxLosetasJugador1" alignment="CENTER" prefHeight="80.0" prefWidth="258.0" spacing="5.0" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBxJugador11" prefHeight="114.0" prefWidth="302.0">
+                     <children>
+                        <Label fx:id="lblJugador2" alignment="CENTER" prefHeight="29.0" prefWidth="303.0" text="Jugador2" />
+                        <HBox fx:id="hBoxLosetasJugador2" alignment="CENTER" prefHeight="80.0" prefWidth="258.0" spacing="5.0" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBxJugador12" prefHeight="138.0" prefWidth="302.0">
+                     <children>
+                        <Label fx:id="lblJugador3" alignment="CENTER" prefHeight="29.0" prefWidth="319.0" text="Jugador3" />
+                        <HBox fx:id="hBoxLosetasJugador3" alignment="CENTER" prefHeight="80.0" prefWidth="258.0" spacing="5.0" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBxJugador121" prefHeight="138.0" prefWidth="302.0">
+                     <children>
+                        <Label fx:id="lblJugador4" alignment="CENTER" prefHeight="29.0" prefWidth="326.0" text="Jugador4" />
+                        <HBox fx:id="hBoxLosetasJugador4" alignment="CENTER" prefHeight="80.0" prefWidth="258.0" spacing="5.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
    </children>
 </AnchorPane>

@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author maris
  */
-public class PrincipalViewController implements Initializable {
+public class PrincipalViewController extends Controller implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -22,5 +22,10 @@ public class PrincipalViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @Override
+    public void initialize() {
+        
+    }
     
 }

@@ -10,15 +10,24 @@ import javafx.fxml.Initializable;
 
 import cr.ac.una.srabblenaut.model.Fichas;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import org.apache.commons.lang.ArrayUtils;
 /**
  * FXML Controller class
  *
@@ -26,22 +35,48 @@ import javafx.scene.input.TransferMode;
  */
 public class TableroViewController extends Controller implements Initializable {
 
-
-/**
- * FXML Controller class
-@ -18,14 +26,321 @@ public class TableroViewController extends Controller implements Initializable {
-    /**
-     * Initializes the controller class.
-     */
-    
     private Fichas meza[][] = new Fichas[15][15];
-    private Fichas bolsa[] = new Fichas[102];
-    private Fichas Mazojug[] = new Fichas[7];
+    private static Fichas bolsa[] = new Fichas[102];
+    private static  Fichas Mazojug1[] = new Fichas[7];
+    private static Fichas Mazojug2[] = new Fichas[7];
+    private static Fichas Mazojug3[] = new Fichas[7];
+    private static  Fichas Mazojug4[] = new Fichas[7];
+    
+    @FXML
+    private VBox vboxTablero;
+    @FXML
+    private HBox hBoxbolsaFichas;
+    @FXML
+    private VBox vBxJugador1;
+    @FXML
+    private Label lblJugador1;
+    @FXML
+    private HBox hBoxLosetasJugador1;
+    @FXML
+    private VBox vBxJugador11;
+    @FXML
+    private Label lblJugador2;
+    @FXML
+    private HBox hBoxLosetasJugador2;
+    @FXML
+    private VBox vBxJugador12;
+    @FXML
+    private Label lblJugador3;
+    @FXML
+    private HBox hBoxLosetasJugador3;
+    @FXML
+    private VBox vBxJugador121;
+    @FXML
+    private Label lblJugador4;
+    @FXML
+    private HBox hBoxLosetasJugador4;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         mezalogica();
         crearBolsa();
+        CrearMezavisual(1);
+       
         
        
     }    
@@ -82,7 +117,7 @@ public class TableroViewController extends Controller implements Initializable {
 }
    
 public void crearBolsa(){
-    for (int i = 0; i < 101; i++) {
+    for (int i = 0; i <102; i++) {
         Fichas fichas = new Fichas();
         fichas.setTipodeFicha("B");
         
@@ -294,26 +329,20 @@ public void crearBolsa(){
 //                System.out.println("onDragDone");
                 /* if the data was successfully moved, clear it */
                 if (event.getTransferMode() == TransferMode.MOVE) {
-//                    los.setAccessibleText("Eliminada");
-//                    moverLosetaSelvaMezaLogica(los);
-//                    hBoxLosetasSelva.getChildren().remove(los);
-//                    rellenarHBoxLosetasSelva();
+                    fichas.setAccessibleText("Eliminada");
+                    moverFichasMezalogia(fichas);
+                    hBoxbolsaFichas.getChildren().remove(fichas);
+                    rellenarHBoxBolsa();
                 }
                 
                 event.consume();
             }
         });
-//            los.setIde(String.valueOf(i));
-//            losetasSelva[i] = los;
-        
-     
-     
-     
-     bolsa[i] = fichas ;
-     
-     
-     
-     
+
+     bolsa[i]= fichas ;
+     rellenarHBoxBolsa();
+     DesordenarFichas();
+
      
     }
     
@@ -322,33 +351,117 @@ public void crearBolsa(){
     
     
 }
+public void CrearMezavisual(int dif){
+    
+    if(dif == 1){
+        for (int i = 0; i < 15; i++) {//filas
+         HBox fila = new HBox();// se crean intastancias de Hbox para para filas 
+         fila.setSpacing(5); 
+        for (int j = 0; j < 15; j++) { //columnas
+             Image img12 = new Image("cr/ac/una/srabblenaut/resources/cuadrado.png");
+                ImageView img = new ImageView();
+                img.setImage(img12);
+                img.setFitHeight(30);
+                img.setFitWidth(30);
+                  //Fucncionalidad del drag and drop de todas la Fichas.      
+                img.setOnDragOver(new EventHandler <DragEvent>() {
+                public void handle(DragEvent event) {
+                    /* data is dragged over the target */
+//                    System.out.println("onDragOver");
+                    /* accept it only if it is  not dragged from the same node 
+                     * and if it has a string data */
+                    if (event.getGestureSource() != img &&
+                            event.getDragboard().hasImage()) {
+                        /* allow for both copying and moving, whatever user chooses */
+                        event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                    }
+                    event.consume();
+                }
+            });
+                
+                img.setOnDragDropped(new EventHandler <DragEvent>() {
+                public void handle(DragEvent event) {
+                    /* data dropped */
+//                    System.out.println("onDragDropped");
+                    /* if there is a string data on dragboard, read it and use it */
+                    Dragboard db = event.getDragboard();
+                    boolean success = false;
+                    if (db.hasImage()) {
+                        img.setImage(db.getImage());
+                        img.setAccessibleText("Agregada"); //bandera que determina que le acaban de soltar algo adentro
+                        success = true;
+                    }
+                    /* let the source know whether the string was successfully 
+                     * transferred and used */
+                    event.setDropCompleted(success);
+                    event.consume();
+                }
+            });
+                fila.getChildren().add(img);
+        }
+                        vboxTablero.getChildren().add(fila);            
+    }   
+            
+            
+            
+            
+            
+        }
+           
+    }
+
+   
+    
+    
+    
+    
+
+   public void moverFichasMezalogia(Fichas Fichs){
+        for (int i=0;i<15;i++){ //filas
+             HBox fila = new HBox();
+             fila = (HBox)vboxTablero.getChildren().get(i);
+            for(int j=0;j<15;j++){//columnas
+                if("Agregada".equals(fila.getChildren().get(j).getAccessibleText())){
+                    Fichs.setFila(i);
+                    Fichs.setColumna(j);
+                    meza[i][j]=Fichs;
+                    fila.getChildren().get(j).setAccessibleText("MovimientoCompleto");
+//                    System.out.println("id agrgardo en meza: "+meza[i][j].getIde());
+                }
+            }
+        }
+    }
 public void rellenarmazoJug(){
     
     
 }
+    public void rellenarHBoxBolsa(){
+        if (hBoxbolsaFichas.getChildren().isEmpty()){ // si esta vacia solo la primer vez agrega 2 losetas
+            hBoxbolsaFichas.getChildren().add(bolsa[0]);  
+            bolsa = (Fichas[]) ArrayUtils.remove(bolsa, 0);
+        }
+          
+    }
+
+    public void DesordenarFichas(){//desordena las losetas selva solo si el jugador es el 1
+        Random r = new Random();
+        for (int i=0; i<bolsa.length; i++) {
+            int posAleatoria = r.nextInt(bolsa.length);
+            Fichas temp = bolsa[i];
+            bolsa[i]= bolsa[posAleatoria];
+            bolsa[posAleatoria]= temp;
+            
+            
+            
+
+        }
+    }
 
     public void setMeza(Fichas[][] meza) {
         this.meza = meza;
     }
 
-    public void setBolsa(Fichas[] bolsa) {
-        this.bolsa = bolsa;
-    }
 
-    public void setMazojug(Fichas[] Mazojug) {
-        this.Mazojug = Mazojug;
-    }
 
-    public Fichas[][] getMeza() {
-        return meza;
-    }
-
-    public Fichas[] getBolsa() {
-        return bolsa;
-    }
-
-    public Fichas[] getMazojug() {
-        return Mazojug;
-    }
 
 }

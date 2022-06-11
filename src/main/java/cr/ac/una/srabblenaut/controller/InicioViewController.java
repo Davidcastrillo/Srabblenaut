@@ -5,6 +5,7 @@
 package cr.ac.una.srabblenaut.controller;
 
 import com.jfoenix.controls.JFXButton;
+import cr.ac.una.srabblenaut.util.FlowController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -18,7 +19,7 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author maris
  */
-public class InicioViewController implements Initializable {
+public class InicioViewController extends Controller implements Initializable {
 
     @FXML
     private AnchorPane root;
@@ -32,17 +33,20 @@ public class InicioViewController implements Initializable {
     private JFXButton btnAcercaDe;
     @FXML
     private JFXButton btnSalir;
+    @FXML
+    private AnchorPane contenedor;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+ 
     }    
 
     @FXML
     private void OnAtionBtnIngresar(ActionEvent event) {
+         FlowController.getInstance().goViewInStage("TableroView", stage);
     }
 
     @FXML
@@ -55,6 +59,11 @@ public class InicioViewController implements Initializable {
 
     @FXML
     private void OnActionBtnSalir(ActionEvent event) {
+    }
+
+    @Override
+    public void initialize() {
+        
     }
     
 }
