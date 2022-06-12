@@ -19,14 +19,11 @@ import javafx.scene.input.MouseEvent;
  * @author maris
  */
 public class AcercaDeViewController extends Controller implements Initializable {
-<<<<<<< HEAD
-=======
 
     @FXML
     private Label lblScrabblenut;
     @FXML
     private JFXButton btnVolver;
->>>>>>> fde96c66ac746a7f54144b2e738c4c17860dc77c
 
     /**
      * Initializes the controller class.
@@ -38,9 +35,7 @@ public class AcercaDeViewController extends Controller implements Initializable 
 
     @Override
     public void initialize() {
-<<<<<<< HEAD
-=======
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
     }
 
     @FXML
@@ -49,7 +44,7 @@ public class AcercaDeViewController extends Controller implements Initializable 
 
     @FXML
     private void OnActionBtnVolver(MouseEvent event) {
->>>>>>> fde96c66ac746a7f54144b2e738c4c17860dc77c
+
     }
     
 }

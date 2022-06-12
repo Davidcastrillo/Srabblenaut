@@ -65,14 +65,11 @@ public class RegistrarseViewController extends Controller implements Initializab
 
     @Override
     public void initialize() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-<<<<<<< HEAD
-=======
+      
 
-    @FXML
-    private void OnActionBtnVolver(MouseEvent event) {
+
+ 
     }
->>>>>>> fde96c66ac746a7f54144b2e738c4c17860dc77c
+
     
 }
