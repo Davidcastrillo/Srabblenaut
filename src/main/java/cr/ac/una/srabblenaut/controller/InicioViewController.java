@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -51,14 +52,17 @@ public class InicioViewController extends Controller implements Initializable {
 
     @FXML
     private void OnAtionBtnregistrarse(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("RegistrarseView", stage);
     }
 
     @FXML
     private void OnAtionBtnAcercaDe(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("AcrcaDeView", stage);
     }
 
     @FXML
     private void OnActionBtnSalir(ActionEvent event) {
+        ((Stage)btnSalir.getScene().getWindow()).close();
     }
 
     @Override

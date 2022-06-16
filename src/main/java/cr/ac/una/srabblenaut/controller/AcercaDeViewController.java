@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
@@ -24,6 +25,10 @@ public class AcercaDeViewController extends Controller implements Initializable 
     private Label lblScrabblenut;
     @FXML
     private JFXButton btnVolver;
+    @FXML
+    private AnchorPane root;
+    @FXML
+    private AnchorPane contenedor;
 
     /**
      * Initializes the controller class.

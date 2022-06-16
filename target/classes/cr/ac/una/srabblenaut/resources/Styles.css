@@ -3,12 +3,26 @@
  */
 
 
-.fondoPrincipal{
+.fondoInicio{
     -fx-background-image:url("../resources/Fondo1.jpg");
     -fx-background-size:stretch;
 }
-
-
+.fondoLogIn{
+    -fx-background-image:url("../resources/LI.jpg");
+    -fx-background-size:stretch;
+}
+.fondoRegistrarse{
+    -fx-background-image:url("../resources/RI.jpg");
+    -fx-background-size:stretch;
+}
+.fondoAcercaDe{
+    -fx-background-image:url("../resources/AcercaDe.jpg");
+    -fx-background-size:stretch;
+}
+.fondoPrincipal{
+    -fx-background-image:url("../resources/ELmteU.jpg");
+    -fx-background-size:stretch;
+}
 
 .fondoTablero{
     -fx-background-image:url("../resources/mesaImagen.jpg");

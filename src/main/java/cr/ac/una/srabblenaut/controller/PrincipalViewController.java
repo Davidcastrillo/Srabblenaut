@@ -30,6 +30,8 @@ public class PrincipalViewController extends Controller implements Initializable
     private JFXButton btnCargarPartida;
     @FXML
     private JFXButton btnSalir;
+    @FXML
+    private AnchorPane contenedor;
 
 
     /**
