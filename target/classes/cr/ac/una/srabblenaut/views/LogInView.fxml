@@ -16,72 +16,74 @@
       <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
    </padding>
    <children>
-      <ImageView fitHeight="447.0" fitWidth="773.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
-         <image>
-            <Image url="@../resources/LI.jpg" />
-         </image>
-      </ImageView>
-      <VBox alignment="TOP_CENTER" layoutX="134.0" layoutY="78.0" prefHeight="400.0" prefWidth="625.0">
+      <AnchorPane fx:id="contenedor" prefHeight="474.0" prefWidth="820.0" styleClass="fondoLogIn" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
          <children>
-            <Label fx:id="lblIngresarUsuario" alignment="CENTER" prefHeight="45.0" prefWidth="217.0" styleClass="lblIngresarUsuario" stylesheets="@../resources/Styles.css" text="Ingresar usuario">
-               <VBox.margin>
-                  <Insets bottom="50.0" />
-               </VBox.margin></Label>
-            <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="440.0">
+            <VBox alignment="CENTER" layoutX="-1.0" prefHeight="435.0" prefWidth="760.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                <children>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resources/astronaut.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets bottom="20.0" right="20.0" />
-                     </HBox.margin></ImageView>
-                  <JFXTextField fx:id="txtUsuario" styleClass="txt-field" stylesheets="@../resources/Styles.css" text="Usuario ">
-                     <HBox.margin>
-                        <Insets bottom="20.0" />
-                     </HBox.margin></JFXTextField>
+                  <Label fx:id="lblIngresarUsuario" alignment="CENTER" prefHeight="45.0" prefWidth="217.0" styleClass="lblIngresarUsuario" stylesheets="@../resources/Styles.css" text="Ingresar usuario" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="440.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../resources/astronaut.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="20.0" right="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <JFXTextField fx:id="txtUsuario" styleClass="txt-field" stylesheets="@../resources/Styles.css" text="Usuario ">
+                           <HBox.margin>
+                              <Insets bottom="20.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="113.0" prefWidth="660.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../resources/password.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <JFXPasswordField fx:id="txtClave" promptText="Clave" styleClass="txt-field" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnAceptar" onAction="#OnAtionBtnAceptar" prefHeight="40.0" prefWidth="150.0" styleClass="btnAceptar" stylesheets="@../resources/Styles.css" text="Aceptar" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCancelar" onAction="#OnActionBtnCancelar" prefHeight="40.0" prefWidth="150.0" styleClass="btnCancelar" stylesheets="@../resources/Styles.css" text="Cancelar" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnRegistrarse" onAction="#OnActionBtnRegistrarse" prefHeight="40.0" prefWidth="150.0" styleClass="btnRegistrarse" stylesheets="@../resources/Styles.css" text="Registrarse " HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="btnVolver" accessibleRole="IMAGE_VIEW" onAction="#OnActonBtnVolver" prefHeight="61.0" prefWidth="91.0" text=" " HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fx:id="btnVolver" fitHeight="76.0" fitWidth="53.0" onDragDetected="#OnActionBtnVolver" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/back.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
                </children>
-            </HBox>
-            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resources/password.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets right="20.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <JFXPasswordField fx:id="txtClave" promptText="Clave" styleClass="txt-field" />
-               </children></HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <JFXButton fx:id="btnAceptar" onAction="#OnAtionBtnAceptar" prefHeight="40.0" prefWidth="150.0" styleClass="btnAceptar" stylesheets="@../resources/Styles.css" text="Aceptar">
-                     <HBox.margin>
-                        <Insets right="20.0" />
-                     </HBox.margin>
-                  </JFXButton>
-                  <JFXButton fx:id="btnCancelar" onAction="#OnActionBtnCancelar" prefHeight="40.0" prefWidth="150.0" styleClass="btnCancelar" stylesheets="@../resources/Styles.css" text="Cancelar">
-                     <HBox.margin>
-                        <Insets right="20.0" />
-                     </HBox.margin>
-                  </JFXButton>
-                  <JFXButton fx:id="btnRegistrarse" onAction="#OnActionBtnRegistrarse" prefHeight="40.0" prefWidth="150.0" styleClass="btnRegistrarse" stylesheets="@../resources/Styles.css" text="Registrarse " />
-               </children>
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </HBox>
-         </children>
-      </VBox>
-      <JFXButton fx:id="btnVolver" accessibleRole="IMAGE_VIEW" layoutX="746.0" layoutY="48.0" onAction="#OnActonBtnVolver" text=" ">
-         <graphic>
-            <ImageView fx:id="btnVolver" fitHeight="76.0" fitWidth="53.0" onDragDetected="#OnActionBtnVolver" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/back.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </JFXButton>
+            </VBox>
+         </children></AnchorPane>
    </children>
 </AnchorPane>

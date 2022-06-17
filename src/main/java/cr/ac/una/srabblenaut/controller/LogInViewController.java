@@ -39,6 +39,8 @@ public class LogInViewController extends Controller implements Initializable {
     private JFXButton btnRegistrarse;
     @FXML
     private JFXButton btnVolver;
+    @FXML
+    private AnchorPane contenedor;
 
     /**
      * Initializes the controller class.
