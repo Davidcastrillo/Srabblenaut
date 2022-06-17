@@ -76,6 +76,13 @@ public class TableroViewController extends Controller implements Initializable {
         mezalogica();
         crearBolsa();
         CrearMezavisual(1);
+        
+//           for (int i = 0; i < 1; i++) {
+//            
+//           ImageView img = new ImageView(bolsa[i].getImage());
+//          vboxTablero.getChildren().add(img);
+//            
+//        }
        
         
        
@@ -332,7 +339,7 @@ public void crearBolsa(){
                     fichas.setAccessibleText("Eliminada");
                     moverFichasMezalogia(fichas);
                     hBoxbolsaFichas.getChildren().remove(fichas);
-                    rellenarHBoxBolsa();
+                    //rellenarHBoxBolsa();
                 }
                 
                 event.consume();
@@ -340,8 +347,8 @@ public void crearBolsa(){
         });
 
      bolsa[i]= fichas ;
-     rellenarHBoxBolsa();
      DesordenarFichas();
+
 
      
     }
@@ -436,12 +443,18 @@ public void rellenarmazoJug(){
     
 }
     public void rellenarHBoxBolsa(){
-        if (hBoxbolsaFichas.getChildren().isEmpty()){ // si esta vacia solo la primer vez agrega 2 losetas
-            hBoxbolsaFichas.getChildren().add(bolsa[0]);  
-            bolsa = (Fichas[]) ArrayUtils.remove(bolsa, 0);
-        }
-          
-    }
+       
+        
+        
+        
+        
+        
+//        if (hBoxbolsaFichas.getChildren().isEmpty()){ // si esta vacia solo la primer vez agrega 2 losetas
+//            hBoxbolsaFichas.getChildren().add(bolsa[0]);  
+//            bolsa = (Fichas[]) ArrayUtils.remove(bolsa, 0);
+//        }
+//          
+   }
 
     public void DesordenarFichas(){//desordena las losetas selva solo si el jugador es el 1
         Random r = new Random();

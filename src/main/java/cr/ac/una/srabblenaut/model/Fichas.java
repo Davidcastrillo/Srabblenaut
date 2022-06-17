@@ -18,6 +18,7 @@ public class Fichas extends ImageView implements Serializable {
     private String tipodeFicha;
     private String ide;
     private int fila;
+    private Image image;
     private int columna;
     
     public Fichas() {
@@ -211,6 +212,8 @@ public class Fichas extends ImageView implements Serializable {
     public void setColumna(int columna) {
         this.columna = columna;
     }
+
+  
     
     
     

@@ -1,11 +1,9 @@
 cr\ac\una\srabblenaut\util\AppContext.class
 cr\ac\una\srabblenaut\util\Mensaje.class
-cr\ac\una\srabblenaut\controller\TableroViewController$4.class
 cr\ac\una\srabblenaut\controller\InicioViewController.class
 cr\ac\una\srabblenaut\controller\LogInViewController.class
 cr\ac\una\srabblenaut\util\BindingUtils.class
 cr\ac\una\srabblenaut\controller\AcercaDeViewController.class
-cr\ac\una\srabblenaut\controller\TableroViewController$1.class
 cr\ac\una\srabblenaut\controller\Controller.class
 cr\ac\una\srabblenaut\model\Jugador.class
 cr\ac\una\srabblenaut\util\Formato.class
@@ -13,9 +11,6 @@ cr\ac\una\srabblenaut\controller\RegistrarseViewController.class
 cr\ac\una\srabblenaut\util\Respuesta.class
 cr\ac\una\srabblenaut\util\FlowController.class
 module-info.class
-cr\ac\una\srabblenaut\controller\TableroViewController$2.class
 cr\ac\una\srabblenaut\model\Fichas.class
 cr\ac\una\srabblenaut\App.class
-cr\ac\una\srabblenaut\controller\TableroViewController$3.class
-cr\ac\una\srabblenaut\controller\TableroViewController.class
 cr\ac\una\srabblenaut\controller\PrincipalViewController.class
