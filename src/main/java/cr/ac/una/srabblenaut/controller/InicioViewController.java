@@ -46,18 +46,18 @@ public class InicioViewController extends Controller implements Initializable {
     }    
 
     @FXML
-    private void OnAtionBtnIngresar(ActionEvent event) {
+    private void OnActionBtnIngresar(ActionEvent event) {
          FlowController.getInstance().goViewInStage("TableroView", stage);
     }
 
     @FXML
-    private void OnAtionBtnregistrarse(ActionEvent event) {
+    private void OnActionBtnRegistrarse(ActionEvent event) {
         FlowController.getInstance().goViewInStage("RegistrarseView", stage);
     }
 
     @FXML
-    private void OnAtionBtnAcercaDe(ActionEvent event) {
-        FlowController.getInstance().goViewInStage("AcrcaDeView", stage);
+    private void OnActionBtnAcercaDe(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("AcercaDeView", stage);
     }
 
     @FXML
