@@ -52,17 +52,11 @@ public class RegistrarseViewController extends Controller implements Initializab
         // TODO
     }    
 
-    @FXML
-    private void OnAtionBtnAceptar(ActionEvent event) {
-    }
 
     @FXML
     private void OnActionBtnCancelar(ActionEvent event) {
     }
 
-    @FXML
-    private void OnActionIngresar(ActionEvent event) {
-    }
 
     @FXML
     private void OnActonBtnVolver(ActionEvent event) {
@@ -77,8 +71,13 @@ public class RegistrarseViewController extends Controller implements Initializab
     }
 
     @FXML
-    private void OnActionBtnVolver(MouseEvent event) {
+    private void OnActionBtnAceptar(ActionEvent event) {
     }
+
+    @FXML
+    private void OnActionBtnIngresar(ActionEvent event) {
+    }
+
 
     
 }

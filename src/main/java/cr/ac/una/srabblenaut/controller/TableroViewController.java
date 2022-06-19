@@ -36,7 +36,7 @@ import org.apache.commons.lang.ArrayUtils;
 public class TableroViewController extends Controller implements Initializable {
 
     private Fichas meza[][] = new Fichas[15][15];
-    private static Fichas bolsa[] = new Fichas[102];
+    private  Fichas bolsa[] = new Fichas[102];
     private static  Fichas Mazojug1[] = new Fichas[7];
     private static Fichas Mazojug2[] = new Fichas[7];
     private static Fichas Mazojug3[] = new Fichas[7];
@@ -77,13 +77,7 @@ public class TableroViewController extends Controller implements Initializable {
         crearBolsa();
         CrearMezavisual(1);
         
-//           for (int i = 0; i < 1; i++) {
-//            
-//           ImageView img = new ImageView(bolsa[i].getImage());
-//          vboxTablero.getChildren().add(img);
-//            
-//        }
-       
+
         
        
     }    
@@ -111,15 +105,7 @@ public class TableroViewController extends Controller implements Initializable {
      
      
 
-//   for (int x=0; x < meza.length; x++) {
-//  System.out.print("|");
-//  for (int y=0; y < meza[x].length; y++) {
-//    System.out.print (meza[x][y].getIde());
-//    if (y!=meza[x].length-1) System.out.print("\t");
-//  }
-//  System.out.println("|");
-//}
-    
+
     
 }
    
@@ -339,16 +325,16 @@ public void crearBolsa(){
                     fichas.setAccessibleText("Eliminada");
                     moverFichasMezalogia(fichas);
                     hBoxbolsaFichas.getChildren().remove(fichas);
-                    //rellenarHBoxBolsa();
+                rellenarHBoxBolsa();
                 }
                 
                 event.consume();
             }
         });
 
-     bolsa[i]= fichas ;
+     bolsa[i]= fichas;
      DesordenarFichas();
-
+     rellenarHBoxBolsa();
 
      
     }
@@ -445,15 +431,12 @@ public void rellenarmazoJug(){
     public void rellenarHBoxBolsa(){
        
         
-        
-        
-        
-        
-//        if (hBoxbolsaFichas.getChildren().isEmpty()){ // si esta vacia solo la primer vez agrega 2 losetas
-//            hBoxbolsaFichas.getChildren().add(bolsa[0]);  
-//            bolsa = (Fichas[]) ArrayUtils.remove(bolsa, 0);
-//        }
-//          
+          
+        if (hBoxbolsaFichas.getChildren().isEmpty()){ // si esta vacia solo la primer vez agrega 2 losetas
+//            hBoxbolsaFichas.getChildren().add((Fichas));  
+            bolsa = (Fichas[]) ArrayUtils.remove(bolsa, 0);
+        }
+          
    }
 
     public void DesordenarFichas(){//desordena las losetas selva solo si el jugador es el 1
@@ -472,6 +455,14 @@ public void rellenarmazoJug(){
 
     public void setMeza(Fichas[][] meza) {
         this.meza = meza;
+    }
+
+    public Fichas[] getBolsa() {
+        return bolsa;
+    }
+
+    public void setBolsa(Fichas[] bolsa) {
+        this.bolsa = bolsa;
     }
 
 
