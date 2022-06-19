@@ -5,6 +5,7 @@
 package cr.ac.una.srabblenaut.controller;
 
 import com.jfoenix.controls.JFXButton;
+import cr.ac.una.srabblenaut.util.FlowController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -44,12 +45,9 @@ public class AcercaDeViewController extends Controller implements Initializable 
     }
 
     @FXML
-    private void OnActonBtnVolver(ActionEvent event) {
+    private void OnActionBtnVolver(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("inicioView", stage);
     }
 
-    @FXML
-    private void OnActionBtnVolver(MouseEvent event) {
-
-    }
     
 }

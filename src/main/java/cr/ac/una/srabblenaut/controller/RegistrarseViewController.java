@@ -7,12 +7,15 @@ package cr.ac.una.srabblenaut.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import cr.ac.una.srabblenaut.util.FlowController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -26,11 +29,9 @@ public class RegistrarseViewController extends Controller implements Initializab
     @FXML
     private Label lblRegistrarUsuario;
     @FXML
-    private JFXTextField txtUsuario;
+    private AnchorPane root;
     @FXML
-    private JFXPasswordField txtClave;
-    @FXML
-    private JFXPasswordField txtConfirmarClave;
+    private AnchorPane contenedor;
     @FXML
     private JFXButton btnAceptar;
     @FXML
@@ -38,11 +39,11 @@ public class RegistrarseViewController extends Controller implements Initializab
     @FXML
     private JFXButton btnIngresar;
     @FXML
-    private JFXButton btnVolver;
+    private TextField txtUsuario;
     @FXML
-    private AnchorPane root;
+    private PasswordField txtClave;
     @FXML
-    private AnchorPane contenedor;
+    private PasswordField txtConfirmarClave;
 
     /**
      * Initializes the controller class.
@@ -51,22 +52,6 @@ public class RegistrarseViewController extends Controller implements Initializab
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    @FXML
-    private void OnAtionBtnAceptar(ActionEvent event) {
-    }
-
-    @FXML
-    private void OnActionBtnCancelar(ActionEvent event) {
-    }
-
-    @FXML
-    private void OnActionIngresar(ActionEvent event) {
-    }
-
-    @FXML
-    private void OnActonBtnVolver(ActionEvent event) {
-    }
 
     @Override
     public void initialize() {
@@ -77,8 +62,17 @@ public class RegistrarseViewController extends Controller implements Initializab
     }
 
     @FXML
-    private void OnActionBtnVolver(MouseEvent event) {
+    private void OnActionBtnAceptar(ActionEvent event) {
     }
 
+    @FXML
+    private void OnActionBtnCancelar(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("inicioView", stage);
+    }
+
+    @FXML
+    private void OnActionBtnIngresar(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("LogInView", stage);
+    }
     
 }

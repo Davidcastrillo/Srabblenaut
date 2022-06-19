@@ -42,15 +42,7 @@
                      </VBox.margin>
                   </Label>
                   <Label styleClass="lblGeneral" text="Marisol Quesada Prado " VBox.vgrow="ALWAYS" />
-                  <JFXButton fx:id="btnVolver" accessibleRole="IMAGE_VIEW" onAction="#OnActonBtnVolver" text=" " VBox.vgrow="ALWAYS">
-                     <graphic>
-                        <ImageView fx:id="btnVolver" fitHeight="76.0" fitWidth="53.0" onDragDetected="#OnActionBtnVolver" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/back.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
+                  <JFXButton fx:id="btnVolver" onAction="#OnActionBtnVolver" styleClass="btnCancelar" text="Volver" />
                </children>
                <padding>
                   <Insets bottom="40.0" />
