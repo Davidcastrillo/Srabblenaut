@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -25,7 +25,7 @@
                         <Insets bottom="50.0" />
                      </VBox.margin>
                   </Label>
-                  <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="440.0">
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="440.0">
                      <children>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                            <image>
@@ -35,14 +35,10 @@
                               <Insets bottom="20.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <JFXTextField fx:id="txtUsuario" styleClass="txt-field" stylesheets="@../resources/Styles.css" text="Usuario ">
-                           <HBox.margin>
-                              <Insets bottom="20.0" />
-                           </HBox.margin>
-                        </JFXTextField>
+                        <TextField fx:id="txtUsuario" promptText="Usuario" styleClass="txt-field" />
                      </children>
                   </HBox>
-                  <HBox alignment="TOP_CENTER" prefHeight="113.0" prefWidth="660.0">
+                  <HBox alignment="CENTER" prefHeight="113.0" prefWidth="660.0">
                      <children>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                            <image>
@@ -52,7 +48,7 @@
                               <Insets right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <JFXPasswordField fx:id="txtClave" promptText="Clave" styleClass="txt-field" />
+                        <PasswordField fx:id="txtClave" promptText="Clave" styleClass="txt-field" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
@@ -68,15 +64,6 @@
                            </HBox.margin>
                         </JFXButton>
                         <JFXButton fx:id="btnRegistrarse" onAction="#OnActionBtnRegistrarse" prefHeight="40.0" prefWidth="150.0" styleClass="btnRegistrarse" stylesheets="@../resources/Styles.css" text="Registrarse " HBox.hgrow="ALWAYS" />
-                        <JFXButton fx:id="btnVolver" accessibleRole="IMAGE_VIEW" onAction="#OnActonBtnVolver" prefHeight="61.0" prefWidth="91.0" text=" " HBox.hgrow="ALWAYS">
-                           <graphic>
-                              <ImageView fx:id="btnVolver" fitHeight="76.0" fitWidth="53.0" onDragDetected="#OnActionBtnVolver" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/back.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </JFXButton>
                      </children>
                      <VBox.margin>
                         <Insets top="30.0" />

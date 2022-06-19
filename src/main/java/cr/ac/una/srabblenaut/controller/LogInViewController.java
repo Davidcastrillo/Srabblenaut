@@ -5,14 +5,14 @@
 package cr.ac.una.srabblenaut.controller;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -28,17 +28,15 @@ public class LogInViewController extends Controller implements Initializable {
     @FXML
     private Label lblIngresarUsuario;
     @FXML
-    private JFXTextField txtUsuario;
+    private TextField txtUsuario;
     @FXML
-    private JFXPasswordField txtClave;
+    private PasswordField txtClave;
     @FXML
     private JFXButton btnAceptar;
     @FXML
     private JFXButton btnCancelar;
     @FXML
     private JFXButton btnRegistrarse;
-    @FXML
-    private JFXButton btnVolver;
     @FXML
     private AnchorPane contenedor;
 
@@ -67,13 +65,5 @@ public class LogInViewController extends Controller implements Initializable {
 
     }
 
-    @FXML
-    private void OnActionBtnVolver(MouseEvent event) {
-    }
-
-    @FXML
-    private void OnActonBtnVolver(ActionEvent event) {
-
-    }
     
 }
