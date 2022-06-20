@@ -1,6 +1,5 @@
 cr\ac\una\srabblenaut\util\AppContext.class
 cr\ac\una\srabblenaut\util\Mensaje.class
-cr\ac\una\srabblenaut\controller\TableroViewController$4.class
 cr\ac\una\srabblenaut\controller\JugarViewController.class
 cr\ac\una\srabblenaut\controller\InicioViewController.class
 cr\ac\una\srabblenaut\controller\LogInViewController.class
@@ -17,6 +16,5 @@ module-info.class
 cr\ac\una\srabblenaut\controller\TableroViewController$2.class
 cr\ac\una\srabblenaut\model\Fichas.class
 cr\ac\una\srabblenaut\App.class
-cr\ac\una\srabblenaut\controller\TableroViewController$3.class
 cr\ac\una\srabblenaut\controller\TableroViewController.class
 cr\ac\una\srabblenaut\controller\PrincipalViewController.class
