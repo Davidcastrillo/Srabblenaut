@@ -23,6 +23,10 @@
     -fx-background-image:url("../resources/ELmteU.jpg");
     -fx-background-size:stretch;
 }
+.fondoJugar{
+    -fx-background-image:url("../resources/VJ.jpg");
+    -fx-background-size:stretch;
+}
 
 .fondoTablero{
     -fx-background-image:url("../resources/mesaImagen.jpg");
@@ -189,7 +193,18 @@
     -fx-alignment:CENTER;
 }
 .btnCargarPartida{
-    -fx-background-color: linear-gradient(#008000, #6666ff);
+    -fx-background-color: linear-gradient(#008000, #ffff80);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment:CENTER;
+}
+.btnPuntajes{
+    -fx-background-color: linear-gradient(#ffff80,#cca300);
     -fx-background-radius: 5;
     -fx-background-insets: 0;
     -fx-text-fill: white;
@@ -213,6 +228,18 @@
 }
 .lblGeneral{
   
+    -fx-opacity: 0.8;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+}
+.jfx-Fondo6{
+    -fx-background-color:linear-gradient(#ffccff, #004d00);
+}
+.lblScrabblenaut4{
+    -fx-background-color:linear-gradient(#ffccff, #004d00);
     -fx-opacity: 0.8;
     -fx-font-size: 24.0px;
     -fx-padding: 5 0 5 0;

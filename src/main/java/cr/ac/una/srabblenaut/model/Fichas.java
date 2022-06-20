@@ -31,6 +31,18 @@ public class Fichas extends ImageView implements Serializable {
         
         
     }
+     public Fichas(Fichas fichas) {
+            
+        puntaje = 0;
+        tipoFicha = 0;
+        tipodeFicha = "N"; // N = ninguno , J= jugador , B= bolsa;
+        ide = "*"; // todas las letras
+        fila = 0;
+        columna = 0;
+        
+        
+    }
+    
     
     public void crearFichas(){
     try {

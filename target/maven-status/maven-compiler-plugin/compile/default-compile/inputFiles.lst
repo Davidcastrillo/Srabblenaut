@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\InicioViewController.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\App.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\Formato.java
@@ -9,9 +10,29 @@ C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\sr
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\TableroViewController.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\AcercaDeViewController.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\Respuesta.java
+C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\JugarViewController.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\model\Fichas.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\RegistrarseViewController.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\Mensaje.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\Controller.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\LogInViewController.java
 C:\Users\maris\OneDrive\Documentos\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\AppContext.java
+=======
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\AppContext.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\FlowController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\model\Fichas.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\PrincipalViewController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\Mensaje.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\AcercaDeViewController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\TableroViewController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\model\Jugador.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\App.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\RegistrarseViewController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\BindingUtils.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\InicioViewController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\Formato.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\util\Respuesta.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\LogInViewController.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\module-info.java
+C:\Users\David\Documents\GitHub\Srabblenaut\src\main\java\cr\ac\una\srabblenaut\controller\Controller.java
+>>>>>>> f5b251a55fb3a3f550bdf569366fe22681619991

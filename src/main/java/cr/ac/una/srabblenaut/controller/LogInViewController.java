@@ -15,6 +15,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import cr.ac.una.srabblenaut.util.FlowController;
 
 /**
  * FXML Controller class
@@ -50,14 +51,17 @@ public class LogInViewController extends Controller implements Initializable {
 
     @FXML
     private void OnAtionBtnAceptar(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("JugarView", stage);
     }
 
     @FXML
     private void OnActionBtnCancelar(ActionEvent event) {
+         FlowController.getInstance().goViewInStage("inicioView", stage);
     }
 
     @FXML
     private void OnActionBtnRegistrarse(ActionEvent event) {
+        FlowController.getInstance().goViewInStage("RegistrarseView", stage);
     }
 
     @Override

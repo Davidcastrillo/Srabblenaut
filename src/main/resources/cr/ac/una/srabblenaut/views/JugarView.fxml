@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.srabblenaut.controller.JugarViewController">
-    <stylesheets>
-        <URL value="@/cr/ac/una/srabblenaut/resources/Styles.css"/>
-    </stylesheets>
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="525.0" prefWidth="850.0" styleClass="jfx-Fondo6" stylesheets="@../resources/Styles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.srabblenaut.controller.JugarViewController">
+   <children>
+      <AnchorPane fx:id="contenedor" layoutX="97.0" layoutY="70.0" prefHeight="386.0" prefWidth="687.0" styleClass="fondoJugar" stylesheets="@../resources/Styles.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="6.0" layoutY="7.0" prefHeight="475.0" prefWidth="796.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <Label fx:id="lblScrabblenut" prefHeight="45.0" prefWidth="196.0" styleClass="lblScrabblenaut4" stylesheets="@../resources/Styles.css" text="Scrabblenaut">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/alphabetic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="70.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="btnJugar" onAction="#OnActionBtnJugar" prefHeight="45.0" prefWidth="165.0" styleClass="btnJugar" text="Jugar">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton prefHeight="45.0" prefWidth="165.0" styleClass="btnCargarPartida" text="Cargar Partida">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPuntajes" onAction="#OnActionBtnPuntajes" prefHeight="45.0" prefWidth="165.0" styleClass="btnPuntajes" text="Ver Puntajes">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSalir" onAction="#OnActionBtnSalir" prefHeight="45.0" prefWidth="165.0" styleClass="btnSalir" text="Salir" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

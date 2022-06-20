@@ -1,6 +1,7 @@
 cr\ac\una\srabblenaut\util\AppContext.class
 cr\ac\una\srabblenaut\util\Mensaje.class
 cr\ac\una\srabblenaut\controller\TableroViewController$4.class
+cr\ac\una\srabblenaut\controller\JugarViewController.class
 cr\ac\una\srabblenaut\controller\InicioViewController.class
 cr\ac\una\srabblenaut\controller\LogInViewController.class
 cr\ac\una\srabblenaut\util\BindingUtils.class
